@@ -1,5 +1,6 @@
 ---
 title: "Analyzing Drake and Kendrick Lamar's Albums based on Song Duration and Valence"
+subtitle: "Drake displays variability in emotional tone over time, while Kendrick Lamar maintains a consistent emotional profile."
 author: 
   - Aviral Bhardwaj, Akshat Aneja, Benji Fleurence, Susie Wang, Yuxin Sun
 thanks: "Code and data are available at: [https://github.com/RohanAlexander/starter_folder](https://github.com/RohanAlexander/starter_folder)."
@@ -77,7 +78,7 @@ kable(summary, col.names = c("Artist", "Album Release Date", "Duration (minutes)
 
 ## Relationship between Kendrick Lamar and Drake's albums duration
 
-[@tbl-duration_data] shows a wide variability in song duration for Drake from around 2010 to 2020. The duration of his songs generally clusters between 3 to 6 minutes. There are several outliers with some songs lasting up to 10 minutes or more, especially after 2015. However, most of the songs maintain a moderate range. There is no clear trend of increasing or decreasing duration over time; instead, there’s variability across albums.
+[@fig-duration_data] shows a wide variability in song duration for Drake from around 2010 to 2020. The duration of his songs generally clusters between 3 to 6 minutes. There are several outliers with some songs lasting up to 10 minutes or more, especially after 2015. However, most of the songs maintain a moderate range. There is no clear trend of increasing or decreasing duration over time; instead, there’s variability across albums.
 
 Kendrick Lamar's songs tend to be more clustered in terms of length, with most of his songs ranging between 3 to 6 minutes as well. The variability is somewhat lower compared to Drake's, with fewer outliers. A few songs surpass 10 minutes, but they are much rarer and seem to occur after 2015.
 
@@ -114,8 +115,8 @@ duration_data <- bind_rows(drake, kendrick) |>
 #| fig.width: 10
 #| fig.height: 6
 #| fig.align: center
+#| label: fig-duration_data
 #| fig-cap: "Comparing Duration of Drake and Kendrick Lamar's Albums."
-#| label: tbl-duration_data
 
 duration_data
 ```
