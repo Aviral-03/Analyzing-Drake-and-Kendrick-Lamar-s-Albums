@@ -3,7 +3,7 @@ title: "Analyzing Drake and Kendrick Lamar's Albums based on Song Duration and V
 subtitle: "Drake displays variability in emotional tone over time, while Kendrick Lamar maintains a consistent emotional profile."
 author: 
   - Aviral Bhardwaj, Akshat Aneja, Benji Fleurence, Susie Wang, Yuxin Sun
-thanks: "Code and data are available at: [https://github.com/RohanAlexander/starter_folder](https://github.com/RohanAlexander/starter_folder)."
+thanks: "Code and data are available at: [https://github.com/Aviral-03/Analyzing-Drake-and-Kendrick-Lamar-s-Albums](https://github.com/Aviral-03/Analyzing-Drake-and-Kendrick-Lamar-s-Albums)."
 date: today
 date-format: long
 abstract: "This report presents a comparative analysis of two prominent hip-hop artists, Drake and Kendrick Lamar, focusing on trends in song duration and emotional tone (valence) from 2010 to 2023. By examining two distinct metrics—song duration and valence—the report highlights key differences and similarities in their musical evolution. Drake’s music displays greater variability in both song length and emotional tone over time, with a noticeable decline in positivity, as his average valence trends downward. Kendrick Lamar, by contrast, demonstrates more consistent song lengths and emotional stability, maintaining a relatively stable emotional profile across his albums. The findings suggest divergent approaches to artistic expression, with Drake leaning toward experimentation and emotional shifts, while Kendrick Lamar retains a more uniform approach to both song structure and emotional content."
