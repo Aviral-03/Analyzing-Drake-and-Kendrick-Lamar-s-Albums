@@ -1,26 +1,25 @@
 #### Preamble ####
-# Purpose: Downloads and saves the data from [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: Downloads and saves the data from Spotify API
+# Author: Aviral Bhardwaj
+# Date: October 10 2024
+# Contact: aviral.bhardwaj@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Pre-requisites: Spotify Developer Account, Spotify API Key, Spotify API Secret Key
+# Any other information needed? N.A
 
 
 #### Workspace setup ####
 library(opendatatoronto)
 library(tidyverse)
-# [...UPDATE THIS...]
+library(spotifyr)
 
 #### Download data ####
-# [...ADD CODE HERE TO DOWNLOAD...]
-
-
+kenrick_lamar <- get_artist_audio_features("kendrick lamar")
+drake <- get_artist_audio_features("drake")
 
 #### Save data ####
-# [...UPDATE THIS...]
-# change the_raw_data to whatever name you assigned when you downloaded it.
-write_csv(the_raw_data, "inputs/data/raw_data.csv") 
+saveRDS(kenrick_lamar, "data/01-raw_data/kenrick_lamar.rds")
+saveRDS(drake, "data/01-raw_data/drake.rds") 
+
 
          
